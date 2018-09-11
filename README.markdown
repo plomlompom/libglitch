@@ -1,4 +1,4 @@
-libglitch makes 8-bit sounds in the spirit of viznut's [“algorithmic symphonies”][1], using a small language not entirely unlike Forth. Included is a small programm reading formulas from the command line. GNU/Linux users may try “./glitter.py glitch_machine!a10k4h1f!aAk5h2ff!aCk3hg!ad3e!p!9fm!a4kl13f!aCk7Fhn | aplay -f u8” for playback.
+libglitch makes 8-bit sounds in the spirit of viznut's [“algorithmic symphonies”][1], using a small language not entirely unlike Forth. Included is a small programm reading formulas from the command line. GNU/Linux users may try “./glitter.py 'glitch_machine!a10k4h1f!aAk5h2ff!aCk3hg!ad3e!p!9fm!a4kl13f!aCk7Fhn' | aplay -f u8” for playback.
 
 Using sox, sound can easily be exported into wave files: “./glitter.py `cat tracks/sidekick.glitch` | head -c128000 | sox -c 1 -r 8000 -t u8 - sidekick.wav”.
 
