@@ -17,7 +17,7 @@
 #       MA 02110-1301, USA.
 
 from sys import argv, stderr, stdout
-from time import time
+from time import time, sleep
 
 import pygame
 import glitch
@@ -453,3 +453,5 @@ while running:
                 stderr.write(str(m) + ' saved.\n')
 
             running = False
+
+    sleep(0.015)
